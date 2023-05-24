@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Img\first.jpeg" />
+    <None Remove="Img\fouth.jpeg" />
+    <None Remove="Img\question.png" />
+    <None Remove="Img\second.jpeg" />
+    <None Remove="Img\third.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Img\first.jpeg" />
+    <Resource Include="Img\fouth.jpeg" />
+    <Resource Include="Img\question.png" />
+    <Resource Include="Img\second.jpeg" />
+    <Resource Include="Img\third.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.8.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>
